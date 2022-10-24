@@ -1,5 +1,14 @@
-describe('My First Test', () => {
-    it('Does not do much!', () => {
-      expect(true).to.equal(true)
+// Mocha test framework standard
+describe('Test Suite', function()
+{
+    it('Test Case 1', function()
+    {
+        cy.visit("https://rahulshettyacademy.com/seleniumPractise/#/")
+
     })
-  })
+
+    // it('Test Case 2', function()
+    // {
+    //     cy.url.should('contains',"https://rahulshettyacademy.com/seleniumPractise/#/")
+    // })
+})
