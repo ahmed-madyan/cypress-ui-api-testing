@@ -1,8 +1,18 @@
 {
+  "env":
+  {
+    "angularpractice_url": "https://rahulshettyacademy.com/angularpractice/"
+
+  },
+  "data":
+  {
   "name": "Valid User Name",
   "email": "test@cypress.io",
   "password": "ValidPass@0100",
   "gender": "Male",
-  "body": "",
-  "url": "https://rahulshettyacademy.com/seleniumPractise/#/"
+  "formSubmittedSuccessMessage": "Success! The Form has been submitted successfully!.",
+  "Name_At_Least_Two_Characters_Error": "Name should be at least 2 characters",
+  "Input_Name_Is_Required": "Name is required"
+
+}
 }
