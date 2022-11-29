@@ -10,6 +10,9 @@
   "formSubmittedSuccessMessage": "Success! The Form has been submitted successfully!.",
   "nameAtLeastTwoCharactersError": "Name should be at least 2 characters",
   "inputNameIsRequiredMessage": "Name is required",
-  "inputEmailIsRequiredMessage": "Email is required"
+  "inputEmailIsRequiredMessage": "Email is required",
+  "radioBtnStudent": "Student",
+  "radioBtnEmployed": "Employed",
+  "radioBtnEntrepreneur": "Entrepreneur (disabled)"
         }
 }
