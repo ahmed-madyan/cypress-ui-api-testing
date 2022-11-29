@@ -1,11 +1,8 @@
 {
-  "env":
-  {
+  "env":{
     "angularpractice_url": "https://rahulshettyacademy.com/angularpractice/"
-
-  },
-  "data":
-  {
+        },
+  "data":{
   "name": "Valid User Name",
   "email": "test@cypress.io",
   "password": "ValidPass@0100",
@@ -14,5 +11,5 @@
   "nameAtLeastTwoCharactersError": "Name should be at least 2 characters",
   "inputNameIsRequiredMessage": "Name is required",
   "inputEmailIsRequiredMessage": "Email is required"
-}
+        }
 }
