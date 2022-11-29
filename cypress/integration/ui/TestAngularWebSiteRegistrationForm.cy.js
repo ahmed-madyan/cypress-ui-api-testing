@@ -51,10 +51,10 @@ describe('Validate registration form', () =>
     it('Validate registration form radio buttons', () =>
     {    
         cy.get('#inlineRadio1').should('be.enabled')
-        cy.get(':nth-child(2) > .form-check-label').should('have.text', 'Student')
+        cy.get(':nth-child(2) > .form-check-label').should('have.text', data.data.radioBtnStudent)
         cy.get('#inlineRadio2').should('be.enabled')
-        cy.get(':nth-child(3) > .form-check-label').should('have.text', 'Employed')
+        cy.get(':nth-child(3) > .form-check-label').should('have.text', data.data.radioBtnEmployed)
         cy.get('#inlineRadio3').should('be.disabled')
-        cy.get(':nth-child(7) > :nth-child(4) > .form-check-label').should('have.text', 'Entrepreneur (disabled)')
+        cy.get(':nth-child(7) > :nth-child(4) > .form-check-label').should('have.text', data.data.radioBtnEntrepreneur)
     })
 })
