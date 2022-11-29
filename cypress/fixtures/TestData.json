@@ -11,7 +11,8 @@
   "password": "ValidPass@0100",
   "gender": "Male",
   "formSubmittedSuccessMessage": "Success! The Form has been submitted successfully!.",
-  "Name_At_Least_Two_Characters_Error": "Name should be at least 2 characters",
-  "Input_Name_Is_Required": "Name is required"
+  "nameAtLeastTwoCharactersError": "Name should be at least 2 characters",
+  "inputNameIsRequiredMessage": "Name is required",
+  "inputEmailIsRequiredMessage": "Email is required"
 }
 }
