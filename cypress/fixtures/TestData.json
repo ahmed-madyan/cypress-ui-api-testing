@@ -1,0 +1,8 @@
+{
+  "name": "Valid User Name",
+  "email": "test@cypress.io",
+  "password": "ValidPass@0100",
+  "gender": "Male",
+  "body": "",
+  "url": "https://rahulshettyacademy.com/seleniumPractise/#/"
+}
