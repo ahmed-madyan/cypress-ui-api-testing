@@ -16,17 +16,24 @@ describe('Validate registration form', () =>
     {    
         cy.get(':nth-child(1) > .form-control').clear()
         cy.get(':nth-child(2) > .form-control').click()
-        cy.get(':nth-child(1).form-group > .alert').should('have.text', data.data.Input_Name_Is_Required)
+        cy.get(':nth-child(1).form-group > .alert').should('have.text', data.data.inputNameIsRequiredMessage)
     })
 
     it('Validate input name field requires at least 2 characters', () =>
     {    
         cy.get(':nth-child(1) > .form-control').type('A').should('have.attr', 'minlength', '2')
         cy.get(':nth-child(2) > .form-control').click()
-        cy.get(':nth-child(1).form-group > .alert').should('have.text', data.data.Name_At_Least_Two_Characters_Error)
+        cy.get(':nth-child(1).form-group > .alert').should('have.text', data.data.nameAtLeastTwoCharactersError)
     })
 
-    it('Test Step 1', () =>
+    it('Validate input email is required', () =>
+    {    
+        cy.get(':nth-child(2) > .form-control').type('A').clear()
+        cy.get(':nth-child(1) > .form-control').click()
+        cy.get(':nth-child(2) > .alert').should('have.text', data.data.inputEmailIsRequiredMessage)
+    })
+
+    it('Validate successfull registration', () =>
     {    
         cy.get(':nth-child(1) > .form-control').clear()
         cy.get(':nth-child(1) > .form-control').type(data.data.name)
