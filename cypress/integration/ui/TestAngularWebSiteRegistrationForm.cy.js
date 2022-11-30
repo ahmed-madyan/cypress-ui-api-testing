@@ -14,13 +14,7 @@ describe('Validate registration form', () =>
 
     it('Validate successfull registration', () =>
     {    
-        cy.get(':nth-child(1) > .form-control').clear()
-        cy.get(':nth-child(1) > .form-control').type(data.data.name)
-        cy.get(':nth-child(4) > .ng-untouched').should('have.value',data.data.name)
-        cy.get(':nth-child(2) > .form-control').type(data.data.email) 
-        cy.get('#exampleInputPassword1').type(data.data.password)
-        cy.get('#exampleFormControlSelect1').select(data.data.gender)
-        cy.get('input.btn').click()
+        cy.register(data.data.name, data.data.email, data.data.password, data.data.gender)
         cy.get('.alert').should('contain.text', data.data.formSubmittedSuccessMessage)
         cy.get('.close').should('exist').click()
         cy.get('.alert').should('not.exist')
